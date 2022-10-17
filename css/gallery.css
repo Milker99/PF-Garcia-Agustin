@@ -29,10 +29,16 @@
     display: flex;
     margin-right: 40px;
     list-style: none;
+    transition: background-color .3s;
 }
 .nav-menu-item{
     font-size: 30px;
     margin: 20px;
+}
+.nav-menu-item:hover{
+    background-color: rgb(255, 134, 245);
+    
+    
 }
 
 /* Fin del NavBar */
