@@ -43,7 +43,8 @@ body{
     padding: 0;
 }
 .nav-menu-item{
-    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
     gap: 10px;
     transition: background .5s;
 }
