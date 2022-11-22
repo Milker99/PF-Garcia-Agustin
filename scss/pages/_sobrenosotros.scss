@@ -1,0 +1,103 @@
+/* Bootstrap estilos a pisar */
+
+.nav{
+    --bs-nav-link-padding-x: 0;
+    --bs-nav-link-padding-y: 0;
+    --bs-nav-link-font-weight: ;
+    --bs-nav-link-color: white;
+    --bs-nav-link-hover-color: white;
+    --bs-nav-link-disabled-color: white;
+    display: flex;
+    list-style: none;
+}
+ol, ul, dl{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+figure {
+    margin: 0;
+}
+h2 {
+    margin: 0;
+    line-height: 1.5;
+}
+a{
+    color: white;
+}
+a:hover{
+    color: white;
+}
+/* Bootstrap estilos a pisar */
+
+.section{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 50px;
+    .titulo{
+        height: min-content;
+        font-weight: bolder;
+        font-family: 'Shadows Into Light', cursive;
+        font-size: 80px;
+        border: #FFC8DD solid 10px;
+        padding: 15px;
+    }
+}
+.section-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 40px 0 40px;
+    height: auto;
+    .div{
+        width: 70vw;
+        .h3{
+            text-decoration: double;
+            font-weight: bolder;
+            font-size: 80px;
+        }
+        .p{
+            font-size: 35px;
+        }
+    }
+}
+.figure{
+    margin: 20px;
+    .img{
+        width: 400px;
+        height: 400px;
+        padding: 10px; 
+        border: #fabbc9 solid 8px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .titulo{
+        width: min-content;
+        font-size: 50px;
+    }
+    .h3{
+        font-size: 50px;   
+    }
+    .p{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 420px){
+	.nav-menu-item{
+      font-size: 30px;
+    }
+    .logo{
+    	font-size: 30px;
+    }
+    .h3{
+        font-size: 40px;   
+    }
+    .img{
+        width: 200px;
+        height: 200px;
+    }
+}

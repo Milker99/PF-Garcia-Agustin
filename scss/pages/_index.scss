@@ -1,0 +1,120 @@
+/* Bootstrap estilos a pisar */
+
+.nav{
+    --bs-nav-link-padding-x: 0;
+    --bs-nav-link-padding-y: 0;
+    --bs-nav-link-font-weight: ;
+    --bs-nav-link-color: white;
+    --bs-nav-link-hover-color: white;
+    --bs-nav-link-disabled-color: white;
+    display: flex;
+    list-style: none;
+}
+ol, ul, dl{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+figure {
+    margin: 0;
+}
+h2 {
+    margin: 0;
+    line-height: 1.5;
+}
+a{
+    color: white;
+}
+a:hover{
+    color: white;
+}
+/* Bootstrap estilos a pisar */
+
+.section{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 30px;
+    .subtitulo{
+        height: min-content;
+        font-weight: bolder;
+        font-family: 'Shadows Into Light', cursive;
+        font-size: 80px;
+        border: #FFC8DD solid 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+.sectionimg{
+    margin-bottom: 50px;
+    margin-left: 170px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    .nombre{
+        color: #FFC8DD;
+    }
+    .img{
+        border: #FFC8DD solid 8px;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+
+    .sectionimg{
+        margin-bottom: 50px;
+        margin-left: 50px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 10px;
+    }
+    .subtitulo{
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 923px){
+    .img{
+        width: 200px;
+        height: 250px;
+    }
+}
+@media screen and (max-width: 750px) {
+
+    .sectionimg{
+        margin-bottom: 50px;
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .subtitulo{
+        font-size: 50px;
+    }
+}
+@media screen and (max-width: 464px){
+    .subtitulo{
+        width: min-content;
+    }
+}
+@media screen and (max-width: 420px) {
+    
+    .sectionimg{
+        margin-left: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .section{
+        margin-left: 15px;
+    }
+}

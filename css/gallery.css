@@ -8,9 +8,48 @@
 body{
     background-color: whitesmoke;
 }
+/* Bootstrap estilos a pisar */
+
+.nav{
+    --bs-nav-link-padding-x: 0;
+    --bs-nav-link-padding-y: 0;
+    --bs-nav-link-font-weight: ;
+    --bs-nav-link-color: white;
+    --bs-nav-link-hover-color: white;
+    --bs-nav-link-disabled-color: white;
+    display: flex;
+    list-style: none;
+}
+ol, ul, dl{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+figure {
+    margin: 0;
+}
+h2 {
+    margin: 0;
+    line-height: 1.5;
+}
+img{
+    vertical-align: 0px;
+    --bs-gutter-x: 0rem;
+}
+a{
+    color: white;
+}
+a:hover{
+    color: white;
+}
+/* Bootstrap estilos a pisar */
+
 .header{
-    background-color: #fabbc9;
-    height: 80px;
+    background-color: #FFAFCC;
+    height: 120px;
     width: 100%;
 }
 .nav{
@@ -24,37 +63,92 @@ body{
     text-decoration: none;
 }
 .nav-menu-item:hover{
-    background-color: #cf86ff;
+    background-color: #A2D2FF;
 }
 .logo{
     font-size: 45px;
     font-weight: bold;
     text-decoration: none;
     color: white;
-    margin: 20px;
+    padding: 10px;
+    margin-left: 30px;
+    border-radius: 25px;
 }
 .logo:hover{
-    color: black;
+    background-color: #A2D2FF;
+    color: white;
 }
 .nav-menu{
     display: flex;
     justify-content: space-around;
+    align-items: center;
     list-style: none;
     padding: 0;
+    gap: 30px;
+    height: 100%;
 }
 .nav-menu-item{
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 10px;
     gap: 10px;
     transition: background .5s;
+    border-radius: 25px;
 }
 
-/* Fin del NavBar */
+@media screen and (max-width: 420px){
+	.nav-menu-item{
+      	  font-size: 30px;
+    	}
+    	.logo{
+        	font-size: 30px;
+    	}
+        p{
+            font-size: 30px;
+        }
+        .a{
+            font-size: 30px;
+        }
+}
+@media screen and (max-width: 1103px){
+    .header{
+        height: auto;
+        padding-bottom: 15px;
+    }
+    .nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+}
+@media screen and (max-width: 865px){
+    .header{
+        height: auto;
+    }
+    .nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    .nav-menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    .logo{
+        margin: 0;
+    }
+}
+
+/* Fin del navbar */
+.div{
+    margin: 40px 0px 40px 0px;
+}
 .section{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px;
 }
 .h2{
     width: auto;
@@ -67,38 +161,119 @@ body{
 .img{
     width: 300px;
     height: 300px;
-    margin-left: 20px;
+    padding: 20px;
+    margin-left: 40px;
     border: #fabbc9 solid 8px;
-}
-.imghide{
-    display: none;
-    width: 300px;
-    height: 300px;
-    margin-left: 20px;
 }
 
 /* Fin del Body */
 
 .footer{
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 160px;
+    height: auto;
     width: 100%;
-    background-color: #fabbc9;
+    background-color: #FFAFCC;
+}
+.footer__item{
+    display: flex;
+    flex-direction: column;
+    font-size: 40px;
+    color: white;
+}
+.footer__item a{
+    padding: 10px;
+    gap: 10px;
+    transition: background .5s;
+    border-radius: 25px;
+}
+.footer__item a:hover{
+    background-color: #A2D2FF;
 }
 .text{
     font-size: 40px;
     color: white;
-    
+    margin: 15px;
+}
+.a{
+    font-size: 40px;
+    color: white;
 }
 .text:hover{
-    color: black;
+    color: white;
+}
+.p{
+    margin-bottom: 20px;
 }
 
 
-/* Fin del Footer*/
+/* Fin del footer */
+
+
+/* Header */
+
+@media screen and (min-width: 1224px){
+    .nav-menu{
+        padding-right: 30px;
+    }
+}
+@media screen and (max-width: 1167px){
+    .header{
+        height: auto;
+        padding-bottom: 15px;
+    }
+    .nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+}
+@media screen and (max-width: 1103px){
+    .header{
+        height: auto;
+        padding-bottom: 15px;
+    }
+    .nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+}
+@media screen and (max-width: 865px){
+    .header{
+        height: auto;
+    }
+    .nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    .nav-menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    .logo{
+        margin: 0;
+    }
+}
+@media screen and (max-width: 420px){
+    .nav-menu-item{
+        font-size: 30px;
+    }
+    .logo{
+        font-size: 30px;
+    }
+}
+
+/* Header */
+
+/* Body */
 
 @media screen and (max-width: 1355px){
     .imghide{
@@ -110,8 +285,62 @@ body{
         display: none;
     }
 }
+@media screen and (max-width: 991px){
+    .imgconteiner{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+    .img{
+        margin-left: 0px;
+    }
+}
 @media screen and (max-width: 440px){
     .h2{
         max-width: min-content;
+        font-size: 40px;
     }
 }
+
+@media screen and (max-width: 320px){
+    .img{
+        width: 200px;
+        height: 200px;
+    }
+}
+@media screen and (min-width: 1176px){
+    .footer__item {
+        padding-left: 80px;
+    }
+}
+
+/* Body */
+
+/* Footer */
+
+@media screen and (min-width: 1176px){
+    .footer__item {
+        padding-left: 80px;
+    }
+}
+@media screen and (max-width: 1175px){
+    .footer{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 420px){
+    p{
+        font-size: 30px;
+    }
+    .a{
+        font-size: 30px;
+    }
+}
+
+/* Footer */
